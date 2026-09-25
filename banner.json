@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-50-finale",
+  "eyebrow": "PICOKIT // LESSON 50",
+  "title": "PICOKIT // FINALE",
+  "subtitle": "FULL PERIPHERAL CAPSTONE + AUTHENTICATED TELEMETRY",
+  "accent": "#FDFF00",
+  "dim": "#9C9E00",
+  "white": "#F3F6DB",
+  "cyan": "#7FD8E0",
+  "bg": "#111100",
+  "bg_edge": "#050500",
+  "icon": "shield",
+  "panel_status": "ALL PERIPHERALS  ·  LCD + SERVO + IR  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "TEMP",
+      "value": "23.0 C"
+    },
+    {
+      "label": "HUM",
+      "value": "61.0 %"
+    },
+    {
+      "label": "LINK",
+      "value": "two-way"
+    },
+    {
+      "label": "RADIO",
+      "value": "-36 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00050  seq 20  HEARTBEAT  AEAD ok",
+    "[+] lcd T:23.0C H:61.0%  N:50 S:0020 OK",
+    "[*] servo 0 deg  ir ack 0x45  button ack",
+    "[+] radio -36 dBm  snr 9.0  anti-replay ok"
+  ],
+  "categories": [
+    "DHT11",
+    "LCD",
+    "SERVO",
+    "RADIO"
+  ],
+  "cards": [
+    {
+      "tag": "INPUT",
+      "label": "button + ir",
+      "value": "ack"
+    },
+    {
+      "tag": "OUTPUT",
+      "label": "lcd + leds",
+      "value": "live"
+    },
+    {
+      "tag": "RADIO",
+      "label": "lora",
+      "value": "2-way"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  DHT11 + LEDS + LCD + SERVO + IR + LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ FINALE ]=="
+  ],
+  "layout": "grid",
+  "stat": "23.0 C"
+}
